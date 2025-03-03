@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razões Para Te Amar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            font-size: 18px;
+            color: #f1eeee;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2em;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #e79cba;
+            transform: translateY(-5px);
+        }
+/* Estilo padrão (desktop) */
+body {
+    font-size: 18px;
+    color: #f1eeee;
+    background-color: #f5f5f5;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.razões-section {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Estilos para telas pequenas (como smartphones) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .razões-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-container .left-side, .media-container .right-side {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .media-container img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .next-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para telas muito pequenas (como celulares em modo retrato) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar ul {
+        font-size: 1em;
+    }
+
+    .media-container img {
+        width: 100%;
+    }
+
+    .next-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+        .razões-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #c170a3cd;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(224, 49, 195, 0.716);
+            border-radius: 10px;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .media-container .left-side, .media-container .right-side {
+            width: 45%;
+            text-align: center;
+        }
+
+        .media-container img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .lyrics-box {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #f0dde3, #f5b0b0);
+            border-radius: 10px;
+            font-size: 1em;
+            color: #000000;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ae2986bf;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2em;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #e68930;
+        }
+        span{
+            color: rgb(137, 25, 113);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">INICIO</a></li>
+            <li><a href="jogos.html">DIVERSÃO</a></li>
+            <li><a href="razoes.html">RAZÕES PARA TE AMAR</a></li>
+            <li><a href="avaliacoes.html">AVALIAÇÕES</a></li>
+        </ul>
+    </div>
+
+    <!-- Seção Razões Para Te Amar -->
+    <div class="razões-section" id="razoes-section">
+        <h2>Razões Para Te Amar</h2>
+        <p>A cada dia, há mais motivos para eu te amar. Quero que lembre de cada letra de cada música.</p>
+
+        <!-- Div para foto e letra -->
+        <div class="media-container">
+            <div class="left-side">
+           
+                <div class="lyrics-box">
+                    <h3><span id="song-title">TE VIVO</span></h3>
+                    <p id="lyrics-text">A gente não precisa tá colado pra tá junto
+                        Os nossos corpos se conversam por horas e horas
+                        Sem palavras, tão dizendo a todo instante um pro outro
+                        O quanto se adoram
+                        
+                        Eu não preciso te olhar pra te ter em meu mundo
+                        Porque, aonde quer que eu vá, você está em tudo
+                        Tudo, tudo que eu preciso...
+                        <span>Te vivo</span></p>
+                </div>
+            </div>
+            <div class="right-side">
+             
+                <div class="lyrics-box">
+                    <h3><span>LEMBRE DESSAS LETRAS QUANDO PRECISAR OU TIVER DÚVIDAS QUE TE AMO</span></h3>
+                    <p id="inspirational-text">Escreva uma mensagem emocionante ou algo especial aqui para complementar a imagem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão de próximo -->
+        <button class="next-button" onclick="nextContent()">Próximo</button>
+    </div>
+<script>
+    const songs = [
+    { 
+        title: "TE VIVO", 
+        lyrics: `A gente não precisa tá colado pra tá junto\nOs nossos corpos se conversam por horas e horas\nSem palavras, tão dizendo a todo instante um pro outro\nO quanto se adoram\n\nEu não preciso te olhar pra te ter em meu mundo\nPorque, aonde quer que eu vá, você está em tudo\nTudo, tudo que eu preciso...\nTe vivo`, 
+        inspirationalText: "Luan Santana, ao escrever TE VIVO, revela que descreve o amor entre  2 pessoas que se amam apesar da distância e expressa a necessitade  que essa pessoa faz em sua vida. Que para se amar alguém não é necessário se ver todos os dias, sim senti-lá com você. Mais para isso é necessário ter conexão com ela, e eu tenho isso comm você.", 
+        
+    },
+    { 
+        title: "TE ASSUMIR PRO BRASIL", 
+        lyrics: `Por que te amo, eu não sei\nMas quero te amar cada vez mais\nO que na vida ninguém fez\nVocê fez em menos de um mês`, 
+        inspirationalText: "Porque eu te amo eu não sei, mais saiba que quero te amar cada vez mais. Por que de fato ninguém fez, tudo isso que você me faz.", 
+        
+    },
+    { 
+        title: "CHUVA DE ARROZ", 
+        lyrics: `Por isso todo mundo passa\nE quem nunca passou, vai passar\nJá tô dizendo aos meus amigos\nCalma que eu não vou pirar\nJá pirei!\n\nMe apaixonei, perdidamente\nE o que eu sei, é que daqui pra frente\n\nVai ser nossa cidade, nosso telefone\nNosso endereço, nosso apartamento\nSabe aquela igreja?\nTô aqui na frente, imaginando chuva de arroz na gente!`, 
+        inspirationalText: "Em CHUVA DE ARROZ, fala sobre a decisão de ser feliz e a consequente transformação que o amor traz para a vida de uma pessoa. E isso é verdade, perceba isso pelo jeito que mudei com você", 
+        
+    },
+    { 
+        title: "DUAS METADES", 
+        lyrics: `Pra falar do amor de verdade\nVou começar pela melhor metade\nTe mostrar tudo de bom que tenho\nE se for preciso eu desenho\nQue eu amo você\nQue eu quero você\n\nA outra metade é defeito\nVocê vai saber de qualquer jeito\nAnjo ou animal, suave ou fatal\n\nO que de um grande amor se espera\nÉ que tenha fogo\nQue domine o pensamento\nE traga sentido novo\nQue tenha paixão, desejo\nQue tenha abraço e beijo\nE seja a melhor sensação\n\nQue preencha a vida vazia\nMande embora a agonia\nE que traga paz pro coração\nÉ você, é você`, 
+        inspirationalText: "Em Duas metades eu sinto o quanto eu Te amo, que ambas aceitamos os defeitos uma das outras, e se ajudamos a resolve-los se der.", 
+      
+    },
+    { 
+        title: "CÓPIA PROÍBIDA", 
+        lyrics: `Eu só vejo qualidade onde tu vê defeitos\nPor que tanta insegurança quando se olha no espelho?\nTu sabe que tudo que Deus faz é perfeito\nTalvez não te amaria se não fosse desse jeito`, 
+        inspirationalText: "Cópia proíbida me faz lembrar de quanto você é perfeita pra mim, tipo muito mesmo porque eu nunca imaginei que poderia existir alguém assim.", 
+     
+    },
+    { 
+        title: "MEU OXIGÊNIO", 
+        lyrics: `Você é meu oxigênio\nMinha sina, meu destino\nA metade do caminho que falta pra eu caminhar\nVocê é o meu melhor momento\nMeu barulho, meu silêncio\nVocê é o meu melhor lugar, é o meu melhor lugar`, 
+        inspirationalText: "Eu te amo tanto que eu já não me imagino sem você. Te ver de longe é tão ruim, mais te ter por perto é tão bom.", 
+        
+    },
+    { 
+        title: "QUE SORTE A NOSSA", 
+        lyrics: `E aí, o que é que a gente vai fazer?\nDiz aí, se você quer e eu também tô querendo você\nTantos sorrisos por aí, você querendo o meu\nTantos olhares me olhando e eu querendo o seu\nEu não duvido não, que não foi por acaso\nSe o amor bateu na nossa porta, que sorte a nossa\nTantos sorrisos por aí, você querendo o meu\nTantos olhares me olhando e eu querendo o seu\nEu não duvido não, que não foi por acaso\nSe o amor bateu na nossa porta, que sorte a nossa`, 
+        inspirationalText: "Que sorte a minhaaa, nossa eu sou tão feliz por ter você devo chamar isso de sorte?, ou de destino?. Só sei que isso é muito  bom de se sentir.", 
+    
+    },
+    { 
+        title: "ANTIDOTO", 
+        lyrics: `Ô, menina, eu não vi nada igual nessa vida\nAté nossa loucura combina\nCola esse sorriso no meu\nTraz o amor que prometeu\n\nÔ menina, ô menina, ô menina, ô menina\nAté nossa loucura combina\nTraz o seu abraço, eu levo o meu\nSorte é te encontrar e azar de quem perdeu você\n\nPassei o dia todo pensando em você, ê, ê\nAinda não encontrei um antídoto pra te esquecer\nComo que eu faço pra tirar da cabeça\nSe deu xeque-mate no meu coração?\nOh não, oh não`, 
+        inspirationalText: "Nessa eu só digo que EU TE AMOO.", 
+       
+    },
+    { 
+        title: "AMOR SEM MEDIDA", 
+        lyrics: `É pouco dizer\nQue é você a minha outra metade\nÉ pouco dizer\nQue daria a vida, meu destino\nE algo a mais\n\nJá não me alcançam as palavras, não\nPra lhe explicar o que eu sinto\nE tudo o que você está causando em mim\nE até no frio eu sinto o seu calor\nE tudo é doce quando está em sua voz\nE se vem de você\n\nVou te provar, te fazer sentir\nQue cada dia eu volto a te escolher\nPorque me dá seu amor sem medida\nVou dividir a minha única vida\nCom você`, 
+        inspirationalText: "O verdadeiro amor é aquele que te faz crescer e te transforma, todos os dias.", 
+       
+    },
+    { 
+        title: "ESCREVI AI", 
+        lyrics: `É que eu te amo e falo na sua cara\nSe tirar você de mim não sobra nada\nO teu sorriso me desmonta inteiro\nAté um simples estalar de dedos\nTalvez você tenha deixado eu ir\nPra ter o gosto de me ver aqui\nFraco demais para continuar\nJuntando forças pra poder falar\n\nQue eu volto, é só você sorrir\nQue eu volto, é só fazer assim\nQue eu volto`, 
+        inspirationalText: "Nada é mais poderoso que o amor que compartilhamos, pois é ele que nos faz seguir em frente.", 
+     
+    },
+    { 
+        title: "AMAR NÃO É PECADO", 
+        lyrics: `Eu não sei de onde vem\nEssa força que me leva pra você\nEu só sei que faz bem\nMas confesso que no fundo eu duvidei\n\nTive medo e em segredo\nGuardei o sentimento e me sufoquei\nMas agora é a hora\nVou gritar pra todo mundo de uma vez\n\nEu tô apaixonado, eu tô contando tudo\nE não tô nem ligando pro que vão dizer\nAmar não é pecado e se eu tiver errado\nQue se dane o mundo, eu só quero você\n\nEu tô apaixonado, eu tô contando tudo\nE não tô nem ligando pro que vão dizer\nAmar não é pecado e se eu tiver errado\nQue se dane o mundo, eu só quero você`, 
+        inspirationalText: "O amor tem o poder de transformar os momentos mais simples em algo extraordinário.", 
+      
+    },
+    { 
+        title: "DEUS É MUITO BOM", 
+        lyrics: `Pro escuro da minha vida\nVocê foi um Sol\nNesse mar tão turbulento\nCê foi meu farol\n\nSe eu sou quem eu sou\nÉ porque você chegou e arrumou\nA bagunça, o caos\nMeu milagre mais real\n\nVocê me trouxe um caminhão de coisas boas\nFoi minha sorte disfarçada de pessoa\nPor tantas noites que eu passei juntando as mãos\nPedindo ao céu pra me mandar uma direção\n\nDeus é muito bom\nOuviu minha oração\nDeus é muito bom\nMandou seu coração`, 
+        inspirationalText: "Deus é muito bom mesmo, aliás ele me deu você no momento que eu mais precisava.", 
+        
+    },
+    { 
+        title: "TUDO QUE VOCÊ QUISER", 
+        lyrics: `Tem dias que eu acordo pensando em você\nEm fração de segundo, vejo o mundo desabar\nAí que cai a ficha que eu não vou te ver\nSerá que esse vazio um dia vai me abandonar?\n\nTem gente que tem cheiro de rosa, de avelã\nTem o perfume doce de toda manhã\nVocê tem tudo\nVocê tem muito\n\nMuito mais que um dia eu sonhei pra mim\nTem a pureza de um anjo querubim\nEu trocaria tudo pra te ter aqui`, 
+        inspirationalText: "Nosso amor é como uma chama: ilumina nossos caminhos e aquece nossas almas.", 
+      
+    },
+    { 
+        title: "TANTO FAZ", 
+        lyrics: `O meu pensamento te segue\nMinha saudade te persegue\nO meu amor não envelhece\nCê não sai da minha mente`, 
+        inspirationalText: "Amar você é a coisa mais natural do mundo. Cada dia ao seu lado é uma benção.", 
+        
+    },
+    { 
+        title: "A NOSSA PRAIA", 
+        lyrics: `A nossa praia é amar, beijar\nFicar de boa em frente ao mar\nCom aquela pessoa que eu escolhi pra ficar\nE tudo que atrasa, deixa a maré levar\nDeixa levar`, 
+        inspirationalText: "Minha praia é você. O amor nos dá força para vencer qualquer desafio.", 
+        
+    },
+    { 
+        title: "O NOSSO SANTO BATEU", 
+        lyrics: `Às vezes acho que devia te dizer mais vezes\nQue te amo e que te quero mais que qualquer coisa\nPor essa noite vem morar aqui, aqui, vem\n\nTem gente que chega e muda os planos da gente\nE que faz a nossa vida caminhar pra frente\nAgora sim eu sei pra onde ir\n\nDessa vida nada se leva\nE no fundo todo mundo espera\nUm amor que venha pra somar, pra completar\nSimbora\n\nO nosso santo bateu\nO amor da sua vida sou eu\nTudo que é meu hoje é seu\nE o fim nem precisa rimar`, 
+      
+    },
+    { 
+        title: "AMO NOITE E DIA", 
+        lyrics: `Tem um pedaço do meu peito bem colado ao teu\nAlguma chave, algum segredo, que me prende ao seu\nUm jeito perigoso de me conquistar\nTeu jeito tão gostoso de me abraçar\n\nTudo se perde, se transforma se ninguém te vê\nEu busco às vezes nos detalhes encontrar você\nO tempo já não passa, só anda pra trás\nMe perco nessa estrada, não aguento mais\n\nIê, iê\nPassa o dia, passa a noite, tô apaixonado\nCoração no peito sofre sem você do lado\nE dessa vez tudo é real, nada de fantasia\nSaiba que eu te amo, amo noite e dia`, 
+      
+        
+    },
+    { 
+        title: "OS ANJOS CANTAM NOSSO AMOR", 
+        lyrics: `É que nos meus sonhos você era linda\nPessoalmente é mais linda ainda\nNosso amor veio de outras vidas\nEu vou te amar nas outras vidas que virão\n\nÉ que você nasceu pra ser minha`, 
+        inspirationalText: "Cada gesto de amor que você faz me faz mais apaixonada por você a cada dia.", 
+       
+    },
+    { 
+        title: "A HORA É AGORA", 
+        lyrics: `Paz e amor\nÉ o que eu quero pra nós\nE que nada nesse mundo cale a nossa voz\nCéu e mar e alguém para amar\nE o arrepio toda vez que a gente se encontrar\n\nE nunca vai passar\nMesmo quando o Sol chegar`, 
+       
+      
+    },
+    { 
+        title: "SEU ASTRAL", 
+        lyrics: `Fico sozinho pensando em você\nVejo imagens, retratos de nós\nOlho pro espelho, sinto o meu coração\nOuço baixinho o som da sua voz\n\nDizendo pra mim que é sobrenatural\nEsse amor fora do normal\nDizendo pra mim que eu sou o seu astral\nQue esse amor que está em mim é tão real\n\nUô-uô\n\nEu viajei no seu olhar\nNo teu sorriso, nos teus segredos\nEu descobri o que é amar\nPelo toque dos seus beijos`, 
+        inspirationalText: "Nosso amor é como um livro, com capítulos que se tornam mais emocionantes a cada página virada.", 
+        
+    }
+];
+
+
+        let currentIndex = 0;
+
+        // Função para carregar a próxima música
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % songs.length;
+
+            const section = document.getElementById('razoes-section');
+            const songTitle = section.querySelector('#song-title');
+            const lyricsText = section.querySelector('#lyrics-text');
+            const inspirationalText = section.querySelector('#inspirational-text');
+
+            songTitle.textContent = songs[currentIndex].title;
+            lyricsText.textContent = songs[currentIndex].lyrics;
+            inspirationalText.textContent = songs[currentIndex].inspirationalText;
+        }
+    </script>
+
+</body>
+</html>
